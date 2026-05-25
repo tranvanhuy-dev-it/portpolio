@@ -42,7 +42,7 @@
 
           <!-- Social links -->
           <div class="glass-card p-6 rounded-2xl">
-            <p class="text-sm text-slate-400 mb-4 font-mono">// Theo dõi tôi trên</p>
+            <p class="text-sm text-slate-400 mb-4 font-mono">Theo dõi tôi trên</p>
             <div class="flex gap-3">
               <a
                 v-for="social in socials"

@@ -14,8 +14,9 @@ export const usePortfolioStore = defineStore('portfolio', {
       bio: `Xin chào! Tôi là một Full-Stack Developer đam mê xây dựng những sản phẩm web
       hiện đại và hiệu suất cao. Tôi có kinh nghiệm làm việc với các công nghệ từ frontend
       đến backend, luôn hướng đến code sạch và trải nghiệm người dùng tốt nhất.`,
-      bio2: `Ngoài coding, tôi thích đọc sách về system design, đóng góp open-source
-      và khám phá những công nghệ mới nhất trong hệ sinh thái JavaScript.`,
+      bio2: `Tôi đặc biệt hứng thú với lĩnh vực Chuyển đổi số, luôn mong muốn ứng dụng
+      các giải pháp công nghệ hiện đại để tối ưu hóa quy trình, nâng cao hiệu suất và
+      mang lại những giá trị thực tế nhất cho cộng đồng và các doanh nghiệp.`,
       location: 'Đà Nẵng, Việt Nam',
       email: 'tranvanhuy064206@gmail.com',
       availability: 'Sẵn sàng cho cơ hội mới',
