@@ -17,7 +17,6 @@
           @click="store.setActiveSkillCategory(cat.id)"
           :id="`skill-tab-${cat.id}`"
         >
-          <span class="mr-2">{{ cat.icon }}</span>
           {{ cat.label }}
         </button>
       </div>
@@ -33,7 +32,6 @@
           <!-- Skill header -->
           <div class="flex items-center justify-between mb-3">
             <div class="flex items-center gap-2">
-              <span class="text-xl">{{ skill.icon }}</span>
               <span class="font-semibold text-white text-sm">{{ skill.name }}</span>
             </div>
             <span class="text-xs font-mono text-purple-400">{{ skill.level }}%</span>
