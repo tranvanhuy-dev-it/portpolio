@@ -60,8 +60,8 @@ export const usePortfolioStore = defineStore('portfolio', {
         label: 'Backend',
         icon: '⚙️',
         skills: [
-          { name: '.NET', level: 80, icon: '🎯' },
-          { name: 'Java', level: 80, icon: '☕' },
+          { name: '.NET (NET Framework)', level: 80, icon: '🎯' },
+          { name: 'Java (Spring Boot)', level: 80, icon: '☕' },
           { name: 'Python', level: 70, icon: '🐍' },
           { name: 'REST API', level: 90, icon: '🔗' },
           { name: 'GraphQL', level: 65, icon: '⬢' },
@@ -77,8 +77,6 @@ export const usePortfolioStore = defineStore('portfolio', {
           { name: 'MongoDB', level: 85, icon: '🍃' },
           { name: 'MySQL', level: 75, icon: '🐬' },
           { name: 'SQL Server', level: 95, icon: '🛢️' },
-          { name: 'Redis', level: 65, icon: '🟥' },
-          { name: 'Prisma ORM', level: 80, icon: '💎' },
         ]
       },
       {
@@ -103,9 +101,9 @@ export const usePortfolioStore = defineStore('portfolio', {
         longDesc: 'Ứng dụng hỗ trợ theo dõi sức khỏe cộng đồng, quản lý cơ sở y tế và các dịch vụ sơ cứu y tế khẩn cấp. Tích hợp bản đồ số thông minh giúp định vị, tìm kiếm và điều hướng nhanh chóng đến các cơ sở y tế gần nhất.',
         tags: ['JavaScript', 'Frappe', 'React.js', 'Python', 'PostgreSQL'],
         category: 'fullstack',
-        github: 'https://github.com/tranvanhuy-dev-it/SonTraHealthManagement',
+        // github: 'https://github.com/tranvanhuy-dev-it/SonTraHealthManagement',
         demo: '#',
-        image: null,
+        image: '/sonTraHealth.png',
         featured: true,
       },
       {
@@ -117,7 +115,7 @@ export const usePortfolioStore = defineStore('portfolio', {
         category: 'fullstack',
         github: 'https://github.com/tranvanhuy-dev-it/StudyHub-Client',
         demo: '#',
-        image: null,
+        image: '/studyHub.png',
         featured: true,
       },
       {
@@ -129,7 +127,7 @@ export const usePortfolioStore = defineStore('portfolio', {
         category: 'fullstack',
         github: 'https://github.com/tranvanhuy-dev-it/pbl3-web-api.git',
         demo: '#',
-        image: null,
+        image: '/pbl3.png',
         featured: true,
       },
       {
@@ -141,7 +139,7 @@ export const usePortfolioStore = defineStore('portfolio', {
         category: 'fullstack',
         github: 'https://github.com/tranvanhuy-dev-it/hvac-job-management-system-dotnet-api',
         demo: '#',
-        image: null,
+        image: '/hvac.png',
         featured: false,
       }
     ],

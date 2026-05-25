@@ -23,9 +23,22 @@
                 :key="item.label"
                 class="flex items-center gap-4 p-3 rounded-xl hover:bg-white/5 transition-colors group"
               >
-                <div class="w-10 h-10 rounded-xl flex items-center justify-center text-lg flex-shrink-0"
-                  style="background: rgba(124,58,237,0.15);">
-                  {{ item.icon }}
+                <div class="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
+                  style="background: rgba(124,58,237,0.15);"
+                >
+                  <!-- Email Icon SVG -->
+                  <svg v-if="item.type === 'email'" class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                  <!-- Location Icon SVG -->
+                  <svg v-else-if="item.type === 'location'" class="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                  </svg>
+                  <!-- Status Icon SVG -->
+                  <svg v-else-if="item.type === 'status'" class="w-5 h-5 text-green-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
                 </div>
                 <div>
                   <p class="text-xs text-slate-500 font-mono">{{ item.label }}</p>
@@ -177,9 +190,9 @@ const store = usePortfolioStore()
 const { form, errors, isSubmitting, submitStatus, submit } = useContactForm()
 
 const contactItems = [
-  { label: 'Email', icon: '✉️', value: store.personal.email, href: `mailto:${store.personal.email}` },
-  { label: 'Vị trí', icon: '📍', value: store.personal.location, href: null },
-  { label: 'Trạng thái', icon: '🟢', value: store.personal.availability, href: null },
+  { label: 'Email', type: 'email', value: store.personal.email, href: `mailto:${store.personal.email}` },
+  { label: 'Vị trí', type: 'location', value: store.personal.location, href: null },
+  { label: 'Trạng thái', type: 'status', value: store.personal.availability, href: null },
 ]
 
 const socials = [

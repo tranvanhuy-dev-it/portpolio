@@ -21,29 +21,29 @@
       </div>
 
       <!-- Name -->
-      <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-up animate-delay-100">
+      <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 fade-up animate-delay-100 leading-tight">
         <span class="text-white">Xin chào, tôi là</span><br />
         <span class="gradient-text">{{ store.personal.name }}</span>
       </h1>
 
       <!-- Typewriter tagline -->
-      <div class="flex items-center justify-center gap-3 text-2xl md:text-3xl font-semibold mb-8 fade-up animate-delay-200" style="min-height: 48px;">
+      <div class="flex items-center justify-center gap-3 text-lg sm:text-2xl md:text-3xl font-semibold mb-8 fade-up animate-delay-200" style="min-height: 48px;">
         <span class="text-slate-400">Tôi là</span>
         <span class="gradient-text">{{ displayText }}</span>
         <span class="w-0.5 h-8 bg-purple-400 animate-pulse ml-0.5"></span>
       </div>
 
       <!-- Bio snippet -->
-      <p class="text-slate-400 text-lg max-w-2xl mx-auto mb-10 fade-up animate-delay-300 leading-relaxed">
+      <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto mb-10 fade-up animate-delay-300 leading-relaxed">
         Đam mê xây dựng các sản phẩm web hiện đại, hiệu suất cao với trải nghiệm người dùng xuất sắc.
       </p>
 
       <!-- CTAs -->
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 fade-up animate-delay-400">
-        <a href="#projects" @click.prevent="scrollTo('#projects')" class="btn-primary text-base px-8 py-3" id="hero-view-projects">
-          Xem dự án 🚀
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 fade-up animate-delay-400 w-full max-w-xs sm:max-w-none mx-auto">
+        <a href="#projects" @click.prevent="scrollTo('#projects')" class="btn-primary text-base px-8 py-3 w-full sm:w-auto text-center" id="hero-view-projects">
+          Xem dự án
         </a>
-        <a :href="store.personal.cv" download class="btn-outline text-base px-8 py-3" id="hero-download-cv">
+        <a :href="store.personal.cv" download class="btn-outline text-base px-8 py-3 w-full sm:w-auto text-center" id="hero-download-cv">
           Tải CV ↓
         </a>
       </div>
