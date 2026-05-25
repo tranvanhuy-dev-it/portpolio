@@ -3,7 +3,7 @@
     <div class="max-w-6xl mx-auto">
       <!-- Top -->
       <div class="flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
-        <a href="#hero" class="text-2xl font-bold font-mono gradient-text">&lt;Dev /&gt;</a>
+        <a href="#hero" class="text-2xl font-bold font-mono gradient-text">HuyTran</a>
 
         <!-- Social links -->
         <div class="flex items-center gap-4">
@@ -42,9 +42,7 @@
       <!-- Bottom -->
       <div class="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
         <p>
-          © {{ new Date().getFullYear() }} Portfolio. Made with
-          <span class="text-purple-400">♥</span> using
-          <span class="text-purple-400 font-mono">Vue 3</span>
+          © {{ new Date().getFullYear() }} | Designed by Tran Van Huy
         </p>
         <button
           @click="scrollToTop"

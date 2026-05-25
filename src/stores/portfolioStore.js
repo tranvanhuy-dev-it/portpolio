@@ -19,7 +19,7 @@ export const usePortfolioStore = defineStore('portfolio', {
       mang lại những giá trị thực tế nhất cho cộng đồng và các doanh nghiệp.`,
       location: 'Đà Nẵng, Việt Nam',
       email: 'tranvanhuy064206@gmail.com',
-      availability: 'Sẵn sàng cho cơ hội mới',
+      availability: 'Sẵn sàng hợp tác',
       avatar: null, // thay bằng đường dẫn ảnh thật
       cv: '/cv.pdf',
       socials: {
