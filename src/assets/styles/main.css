@@ -32,35 +32,40 @@
 
   body {
     background-color: #f8fafc;
-    color: #0f172a;
+    color: #09090b;
     font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-weight: 500; /* Set global base to Medium */
     overflow-x: hidden;
     line-height: 1.6;
   }
 
   ::selection {
     background: rgba(124, 58, 237, 0.15);
-    color: #0f172a;
+    color: #09090b;
   }
 }
 
 /* ===================== LIGHT MODE OVERRIDES FOR TAILWIND CLASS UTILITIES ===================== */
-/* Force light text color on dark utility classes except inside primary buttons */
+/* Force absolute high-contrast text color and bolder weights on body elements */
+p, li, a:not(.btn-primary):not(.btn-outline), span:not(.font-bold):not(.font-semibold):not(.btn-primary):not(.text-purple-400) {
+  font-weight: 500 !important; /* Make all copy bold and crisp */
+}
+
 .text-white:not(.btn-primary),
 .text-slate-100:not(.btn-primary) {
-  color: #0f172a !important;
+  color: #09090b !important; /* Absolute Pitch Black */
 }
 .text-slate-200 {
-  color: #0f172a !important;
+  color: #09090b !important;
 }
 .text-slate-300 {
-  color: #1e293b !important; /* Rich, dark slate-800 for descriptions and highlights */
+  color: #09090b !important; /* Extremely high contrast */
 }
 .text-slate-400 {
-  color: #334155 !important; /* Sharp slate-700 for subtitles and primary lists */
+  color: #18181b !important; /* Deep dark slate-900 */
 }
 .text-slate-500 {
-  color: #475569 !important; /* Clean slate-600 for timestamps and subtext */
+  color: #27272a !important; /* Clean dark zinc-800 */
 }
 
 /* Override background colors of dark layouts */
