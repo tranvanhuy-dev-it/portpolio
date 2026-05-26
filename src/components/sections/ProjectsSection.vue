@@ -87,6 +87,14 @@
               </span>
             </div>
 
+            <!-- Project Period / Duration -->
+            <div v-if="selectedProject.time" class="flex items-center gap-2 text-xs sm:text-sm text-slate-400 mb-6 font-mono bg-white/5 border border-white/10 rounded-xl px-4 py-2 w-fit">
+              <svg class="w-4 h-4 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              <span>Thời gian thực hiện: <strong class="text-white">{{ selectedProject.time }}</strong></span>
+            </div>
+
             <!-- Long Description -->
             <p class="text-slate-300 text-sm leading-relaxed mb-6 whitespace-pre-wrap">
               {{ selectedProject.longDesc || selectedProject.description }}

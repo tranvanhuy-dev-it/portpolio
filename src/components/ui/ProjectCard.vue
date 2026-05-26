@@ -35,9 +35,18 @@
 
     <!-- Content -->
     <div class="p-5">
-      <h3 class="text-lg font-bold text-white mb-2 group-hover:text-purple-300 transition-colors cursor-pointer" @click="$emit('show-details', project)">
+      <h3 class="text-lg font-bold text-white mb-1.5 group-hover:text-purple-300 transition-colors cursor-pointer" @click="$emit('show-details', project)">
         {{ project.title }}
       </h3>
+      
+      <!-- Project Period / Duration -->
+      <div v-if="project.time" class="flex items-center gap-1.5 text-xs text-slate-400/80 mb-3 font-mono">
+        <svg class="w-3.5 h-3.5 opacity-70 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+        </svg>
+        <span>{{ project.time }}</span>
+      </div>
+
       <p class="text-slate-400 text-sm mb-4 line-clamp-2 leading-relaxed">
         {{ project.description }}
       </p>
