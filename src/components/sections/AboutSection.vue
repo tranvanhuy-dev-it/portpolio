@@ -91,6 +91,16 @@
         </div>
       </div>
 
+      <!-- Career Objective -->
+      <div v-if="store.personal.objective" class="mt-16 p-6 rounded-2xl border border-white/5 bg-white/[0.02] fade-up">
+        <h4 class="text-white font-bold text-lg mb-3">
+          Mục tiêu nghề nghiệp
+        </h4>
+        <p class="text-slate-300 text-sm md:text-base leading-relaxed">
+          {{ store.personal.objective }}
+        </p>
+      </div>
+
       <!-- Stats -->
       <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20">
         <div

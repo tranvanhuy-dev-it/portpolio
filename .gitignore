@@ -39,3 +39,8 @@ dist-ssr/
 # Agent/AI metadata
 .agent/
 .gemini/
+
+# Playwright MCP & local screenshots
+.playwright-mcp/
+*.png
+!public/*.png

@@ -16,14 +16,15 @@
         >
           <!-- Left side: Type Icon & Date / GPA -->
           <div class="flex md:flex-col items-center md:items-start justify-between w-full md:w-auto md:min-w-[180px] gap-4 shrink-0">
-            <span
-              class="inline-flex items-center justify-center w-14 h-14 rounded-2xl text-3xl shrink-0"
+            <div
+              class="inline-flex items-center justify-center w-14 h-14 rounded-2xl shrink-0 overflow-hidden"
               :style="edu.type === 'degree'
                 ? 'background: rgba(124,58,237,0.15);'
                 : 'background: rgba(6,182,212,0.15);'"
             >
-              {{ edu.type === 'degree' ? '🎓' : '📜' }}
-            </span>
+              <img v-if="edu.logo" :src="edu.logo" alt="logo" class="w-full h-full object-contain p-1.5" />
+              <span v-else class="text-3xl">{{ edu.type === 'degree' ? '🎓' : '📜' }}</span>
+            </div>
             <div class="text-right md:text-left">
               <span class="text-xs font-mono text-slate-400 block">{{ edu.period }}</span>
               <span v-if="edu.gpa" class="inline-block text-xs px-2.5 py-1 rounded-lg font-mono mt-1.5"

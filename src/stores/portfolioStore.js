@@ -17,6 +17,7 @@ export const usePortfolioStore = defineStore('portfolio', {
       bio2: `Tôi đặc biệt hứng thú với lĩnh vực Chuyển đổi số, luôn mong muốn ứng dụng
       các giải pháp công nghệ hiện đại để tối ưu hóa quy trình, nâng cao hiệu suất và
       mang lại những giá trị thực tế nhất cho cộng đồng và các doanh nghiệp.`,
+      objective: 'Trở thành một Full-Stack Engineer xuất sắc kết hợp chuyên sâu công nghệ Web hiện đại và các giải pháp thông minh dựa trên AI & Data Science. Ngắn hạn, mong muốn tham gia thực tập và làm việc tại các doanh nghiệp công nghệ lớn để hoàn thiện kỹ năng thực chiến, quy trình Agile và xây dựng sản phẩm chất lượng cao. Dài hạn, hướng tới vai trò Tech Lead để chủ trì thiết kế kiến trúc và dẫn dắt các dự án chuyển đổi số mang tính thực tiễn cao.',
       location: 'Đà Nẵng, Việt Nam',
       email: 'tranvanhuy064206@gmail.com',
       availability: 'Sẵn sàng hợp tác',
@@ -31,12 +32,12 @@ export const usePortfolioStore = defineStore('portfolio', {
     },
 
     // ===================== STATS =====================
-    // stats: [
-    //   { value: '3+', label: 'Năm kinh nghiệm' },
-    //   { value: '20+', label: 'Dự án hoàn thành' },
-    //   { value: '15+', label: 'Công nghệ sử dụng' },
-    //   { value: '100%', label: 'Cam kết chất lượng' },
-    // ],
+    stats: [
+      { value: 'AI & DS', label: 'Chuyên ngành Định hướng' },
+      { value: '5+', label: 'Dự án thực tế' },
+      { value: '15+', label: 'Công nghệ sử dụng' },
+      { value: '100%', label: 'Nhiệt huyết & Sáng tạo' },
+    ],
 
     // ===================== SKILLS =====================
     skillCategories: [
@@ -51,8 +52,6 @@ export const usePortfolioStore = defineStore('portfolio', {
           { name: 'JavaScript', level: 95, icon: '🟨' },
           { name: 'Tailwind CSS', level: 90, icon: '💨' },
           { name: 'HTML/CSS', level: 95, icon: '🌐' },
-          { name: 'Nuxt.js', level: 55, icon: '💚' },
-          { name: 'GSAP', level: 70, icon: '✨' },
         ]
       },
       {
@@ -85,9 +84,13 @@ export const usePortfolioStore = defineStore('portfolio', {
         icon: '🛠️',
         skills: [
           { name: 'Git/GitHub', level: 90, icon: '🐙' },
+          { name: 'Docker', level: 75, icon: '🐳' },
           { name: 'Linux', level: 72, icon: '🐧' },
           { name: 'Nginx', level: 65, icon: '🌐' },
-          { name: 'CI/CD', level: 55, icon: '🔄' },
+          { name: 'CI/CD', level: 60, icon: '🔄' },
+          { name: 'VS Code / VS', level: 95, icon: '💻' },
+          { name: 'Antigravity (AI)', level: 90, icon: '🛸' },
+          { name: 'IntelliJ IDEA', level: 85, icon: '⚡' },
         ]
       },
     ],
@@ -97,8 +100,8 @@ export const usePortfolioStore = defineStore('portfolio', {
       {
         id: 1,
         title: 'SonTra Health Management',
-        description: 'Hệ thống quản lý y tế và sức khỏe tích hợp bản đồ số tại khu vực Sơn Trà.',
-        longDesc: 'Ứng dụng hỗ trợ theo dõi sức khỏe cộng đồng, quản lý cơ sở y tế và các dịch vụ sơ cứu y tế khẩn cấp. Tích hợp bản đồ số thông minh giúp định vị, tìm kiếm và điều hướng nhanh chóng đến các cơ sở y tế gần nhất.',
+        description: 'Hệ thống quản lý các cơ sở kinh doanh và dịch vụ y tế dành cho chính quyền phường Sơn Trà.',
+        longDesc: 'Ứng dụng hỗ trợ chính quyền địa phương quản lý, giám sát các cơ sở kinh doanh và dịch vụ liên quan đến y tế và sức khỏe tại phường Sơn Trà. Tích hợp bản đồ số thông minh giúp định vị, quản lý thông tin cấp phép, thanh tra chất lượng và hỗ trợ tìm kiếm điều hướng nhanh chóng.',
         tags: ['JavaScript', 'Frappe', 'React.js', 'Python', 'PostgreSQL'],
         category: 'fullstack',
         // github: 'https://github.com/tranvanhuy-dev-it/SonTraHealthManagement',
@@ -148,11 +151,12 @@ export const usePortfolioStore = defineStore('portfolio', {
       {
         id: 1,
         company: 'Trường Đại học Bách khoa - ĐHĐN',
-        position: 'Trưởng nhóm / Thành viên phát triển dự án PBL',
-        period: '2024 – Hiện tại',
-        duration: 'Dự án học thuật & PBL',
+        position: 'Trưởng nhóm / Thành viên phát triển dự án',
+        period: '2024 – Nay',
+        duration: 'Dự án học thuật',
         description: [
-          'Chịu trách nhiệm thiết kế hệ thống, lựa chọn kiến trúc và trực tiếp phát triển các dự án môn học, đặc biệt là các kỳ PBL (Project-Based Learning).',
+          'Chủ động tìm hiểu và tiếp cận các công nghệ tiên tiến trong lĩnh vực AI, Data Science và Full-stack Web Development',
+          'Tham gia phát triển và hoàn thiện các dự án học thuật, vận dụng kiến thức chuyên ngành vào thực tiễn',
           'Tích hợp công nghệ hiện đại như React.js, Vue 3, Python (Frappe Framework), Spring Boot và .NET Core vào các bài toán thực tế.',
           'Quản lý mã nguồn dự án qua Git/GitHub, thực hiện phân chia công việc và làm việc nhóm hiệu quả theo mô hình Agile/Scrum.',
           'Phân tích cơ sở dữ liệu (PostgreSQL, MySQL, SQL Server), tối ưu hóa các câu lệnh truy vấn và thiết kế API đáp ứng hiệu năng.'
@@ -182,7 +186,7 @@ export const usePortfolioStore = defineStore('portfolio', {
         duration: 'Tự học & Phát triển bản thân',
         description: [
           'Chủ động nghiên cứu và tiếp cận các xu hướng công nghệ mới thông qua tài liệu tiếng Anh chính thống và các nền tảng tự học uy tín.',
-          'Xây dựng các dự án thực tế đầy tâm huyết như ứng dụng y tế SonTra Health Management, nền tảng tài liệu StudyHub để áp dụng lý thuyết vào thực hành.',
+          'Xây dựng các dự án thực tế đầy tâm huyết để áp dụng lý thuyết vào thực hành.',
           'Rèn luyện tư duy phân tích, giải quyết vấn đề (problem-solving) và không ngừng tối ưu hóa trải nghiệm người dùng UI/UX.'
         ],
         tech: ['Frappe', 'Vue 3', 'Spring Boot', 'PostgreSQL', 'Tailwind CSS'],
@@ -200,6 +204,7 @@ export const usePortfolioStore = defineStore('portfolio', {
         gpa: '3.5/4.0',
         description: 'Chuyên ngành Khoa học dữ liệu và Trí tuệ nhân tạo',
         type: 'degree',
+        logo: '/dut.png',
       },
       // {
       //   id: 2,
