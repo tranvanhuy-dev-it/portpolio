@@ -32,7 +32,7 @@
 
   body {
     background-color: #f8fafc;
-    color: #1e293b;
+    color: #0f172a;
     font-family: 'Space Grotesk', 'Inter', sans-serif;
     overflow-x: hidden;
     line-height: 1.6;
@@ -46,23 +46,21 @@
 
 /* ===================== LIGHT MODE OVERRIDES FOR TAILWIND CLASS UTILITIES ===================== */
 /* Force light text color on dark utility classes except inside primary buttons */
-.text-white:not(.btn-primary) {
+.text-white:not(.btn-primary),
+.text-slate-100:not(.btn-primary) {
   color: #0f172a !important;
 }
-.text-slate-100 {
-  color: #1e293b !important;
-}
 .text-slate-200 {
-  color: #334155 !important;
+  color: #0f172a !important;
 }
 .text-slate-300 {
-  color: #475569 !important;
+  color: #1e293b !important; /* Rich, dark slate-800 for descriptions and highlights */
 }
 .text-slate-400 {
-  color: #64748b !important;
+  color: #334155 !important; /* Sharp slate-700 for subtitles and primary lists */
 }
 .text-slate-500 {
-  color: #94a3b8 !important;
+  color: #475569 !important; /* Clean slate-600 for timestamps and subtext */
 }
 
 /* Override background colors of dark layouts */
