@@ -31,7 +31,8 @@
         >
           <!-- Skill header -->
           <div class="flex items-center justify-between mb-3">
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2.5">
+              <img v-if="skill.logo" :src="skill.logo" alt="logo" class="w-5 h-5 object-contain shrink-0" />
               <span class="font-semibold text-white text-sm">{{ skill.name }}</span>
             </div>
             <span class="text-xs font-mono text-purple-400">{{ skill.level }}%</span>

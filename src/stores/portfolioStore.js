@@ -46,12 +46,12 @@ export const usePortfolioStore = defineStore('portfolio', {
         label: 'Frontend',
         icon: '🎨',
         skills: [
-          { name: 'Vue.js', level: 95, icon: '🟢' },
-          { name: 'React', level: 60, icon: '⚛️' },
-          { name: 'TypeScript', level: 65, icon: '🔷' },
-          { name: 'JavaScript', level: 95, icon: '🟨' },
-          { name: 'Tailwind CSS', level: 90, icon: '💨' },
-          { name: 'HTML/CSS', level: 95, icon: '🌐' },
+          { name: 'Vue.js', level: 95, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg' },
+          { name: 'React', level: 60, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg' },
+          { name: 'TypeScript', level: 65, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg' },
+          { name: 'JavaScript', level: 95, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg' },
+          { name: 'Tailwind CSS', level: 90, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' },
+          { name: 'HTML/CSS', level: 95, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg' },
         ]
       },
       {
@@ -59,12 +59,12 @@ export const usePortfolioStore = defineStore('portfolio', {
         label: 'Backend',
         icon: '⚙️',
         skills: [
-          { name: '.NET (NET Framework)', level: 80, icon: '🎯' },
-          { name: 'Java (Spring Boot)', level: 80, icon: '☕' },
-          { name: 'Python', level: 70, icon: '🐍' },
-          { name: 'REST API', level: 90, icon: '🔗' },
-          { name: 'GraphQL', level: 65, icon: '⬢' },
-          { name: 'Socket.io', level: 75, icon: '🔌' },
+          { name: '.NET (NET Framework)', level: 80, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original.svg' },
+          { name: 'Java (Spring Boot)', level: 80, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg' },
+          { name: 'Python', level: 70, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg' },
+          { name: 'REST API', level: 90, logo: 'https://cdn.simpleicons.org/postman/FF6C37' },
+          { name: 'GraphQL', level: 65, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg' },
+          { name: 'Socket.io', level: 75, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg' },
         ]
       },
       {
@@ -72,10 +72,10 @@ export const usePortfolioStore = defineStore('portfolio', {
         label: 'Database',
         icon: '🗄️',
         skills: [
-          { name: 'PostgreSQL', level: 80, icon: '🐘' },
-          { name: 'MongoDB', level: 85, icon: '🍃' },
-          { name: 'MySQL', level: 75, icon: '🐬' },
-          { name: 'SQL Server', level: 95, icon: '🛢️' },
+          { name: 'PostgreSQL', level: 80, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg' },
+          { name: 'MongoDB', level: 85, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg' },
+          { name: 'MySQL', level: 75, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg' },
+          { name: 'SQL Server', level: 95, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg' },
         ]
       },
       {
@@ -83,14 +83,14 @@ export const usePortfolioStore = defineStore('portfolio', {
         label: 'DevOps & Tools',
         icon: '🛠️',
         skills: [
-          { name: 'Git/GitHub', level: 90, icon: '🐙' },
-          { name: 'Docker', level: 75, icon: '🐳' },
-          { name: 'Linux', level: 72, icon: '🐧' },
-          { name: 'Nginx', level: 65, icon: '🌐' },
-          { name: 'CI/CD', level: 60, icon: '🔄' },
-          { name: 'VS Code / VS', level: 95, icon: '💻' },
-          { name: 'Antigravity (AI)', level: 90, icon: '🛸' },
-          { name: 'IntelliJ IDEA', level: 85, icon: '⚡' },
+          { name: 'Git/GitHub', level: 90, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg' },
+          { name: 'Docker', level: 75, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg' },
+          { name: 'Linux', level: 72, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg' },
+          { name: 'Nginx', level: 65, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg' },
+          { name: 'CI/CD', level: 60, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg' },
+          { name: 'VS Code / VS', level: 95, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg' },
+          { name: 'Antigravity (AI)', level: 90, logo: 'https://cdn.simpleicons.org/googledeepmind/7c3aed' },
+          { name: 'IntelliJ IDEA', level: 85, logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg' },
         ]
       },
     ],
